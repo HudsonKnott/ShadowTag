@@ -6,6 +6,8 @@ commands:
   shadowtagger:
     description: Sets the tagger and starts the game
     usage: /shadowtagger <player>
+    permission: st.start
   shadowend:
     description: Ends the Shadow Tag session
     usage: /shadowend
+    permission: st.end
