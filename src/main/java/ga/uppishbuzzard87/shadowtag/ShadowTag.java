@@ -1,5 +1,8 @@
 package ga.uppishbuzzard87.shadowtag;
 
+import ga.uppishbuzzard87.shadowtag.commands.EndGame;
+import ga.uppishbuzzard87.shadowtag.commands.SetTagger;
+import ga.uppishbuzzard87.shadowtag.events.OnDamage;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import java.io.IOException;

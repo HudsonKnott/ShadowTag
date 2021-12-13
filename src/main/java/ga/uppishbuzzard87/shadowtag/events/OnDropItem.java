@@ -1,4 +1,4 @@
-package ga.uppishbuzzard87.shadowtag;
+package ga.uppishbuzzard87.shadowtag.events;
 
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerDropItemEvent;

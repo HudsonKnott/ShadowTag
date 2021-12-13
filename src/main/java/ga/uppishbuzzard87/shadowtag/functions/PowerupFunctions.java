@@ -1,4 +1,4 @@
-package ga.uppishbuzzard87.shadowtag;
+package ga.uppishbuzzard87.shadowtag.functions;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
