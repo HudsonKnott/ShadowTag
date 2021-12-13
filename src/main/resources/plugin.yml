@@ -1,0 +1,11 @@
+name: ShadowTag
+version: '${project.version}'
+main: ga.uppishbuzzard87.shadowtag.ShadowTag
+api-version: 1.17
+commands:
+  shadowtagger:
+    description: Sets the tagger and starts the game
+    usage: /shadowtagger <player>
+  shadowend:
+    description: Ends the Shadow Tag session
+    usage: /shadowend
