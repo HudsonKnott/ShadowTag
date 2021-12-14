@@ -24,7 +24,7 @@ public final class ShadowTag extends JavaPlugin {
         String version = properties.getProperty("version");
         String artifactId = properties.getProperty("artifactId");
         String groupId = properties.getProperty("groupId");
-        System.out.println(ChatColor.GOLD + "ShadowTag " + ChatColor.GREEN +"v" + version + ChatColor.GOLD + " is loaded. Happy playing!");
+        System.out.println(ChatColor.GOLD + "ShadowTag " + ChatColor.GREEN +"v" + version + ChatColor.GOLD + " is loaded. This is an ALPHA build; please report any bugs in the GitHub issues tab" + ChatColor.GREEN + " (https://github.com/UppishBuzzard87/ShadowTag/issues). " + ChatColor.GOLD + "Happy playing!");
     }
 
     @Override
