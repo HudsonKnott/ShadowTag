@@ -13,5 +13,3 @@ Please note: I am very inexperienced in Java, this is my first proper plugin. If
 * /shadowend
   * Ends the game
   * Permission: st.end
-
- #### License: CC BY-NC-SA
