@@ -27,6 +27,11 @@ public class GiveRemovePowerups {
         grayDyeMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "Invisibility");
         grayDye.setItemMeta(grayDyeMeta);
         p.getInventory().addItem(grayDye);
+        // Slow Player (trident)
+        ItemStack trident = new ItemStack(Material.TRIDENT);
+        ItemMeta tridentMeta = trident.getItemMeta();
+        tridentMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "Slow Down Player (throw me)");
+        trident.setItemMeta(tridentMeta);
     }
     public static void RemovePowerups() {
         for (Player p : Bukkit.getOnlinePlayers()) {
@@ -38,6 +43,9 @@ public class GiveRemovePowerups {
             }
             if (p.getInventory().contains(new ItemStack(Material.GRAY_DYE))) {
                 p.getInventory().removeItem(new ItemStack(Material.GRAY_DYE));
+            }
+            if (p.getInventory().contains(new ItemStack(Material.TRIDENT))) {
+                p.getInventory().removeItem(new ItemStack(Material.TRIDENT));
             }
         }
     }
