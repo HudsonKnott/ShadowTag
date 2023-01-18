@@ -1,6 +1,6 @@
-package ga.uppishbuzzard87.shadowtag.events;
+package uk.co.hudsonknott.shadowtag.events;
 
-import ga.uppishbuzzard87.shadowtag.functions.GiveRemoveTagger;
+import uk.co.hudsonknott.shadowtag.functions.GiveRemoveTagger;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

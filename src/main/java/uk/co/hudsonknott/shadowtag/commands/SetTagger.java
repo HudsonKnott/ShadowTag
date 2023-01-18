@@ -1,6 +1,6 @@
-package ga.uppishbuzzard87.shadowtag.commands;
+package uk.co.hudsonknott.shadowtag.commands;
 
-import ga.uppishbuzzard87.shadowtag.functions.GiveRemoveTagger;
+import uk.co.hudsonknott.shadowtag.functions.GiveRemoveTagger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

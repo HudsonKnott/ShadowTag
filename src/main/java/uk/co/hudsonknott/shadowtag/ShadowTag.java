@@ -1,10 +1,10 @@
-package ga.uppishbuzzard87.shadowtag;
+package uk.co.hudsonknott.shadowtag;
 
-import ga.uppishbuzzard87.shadowtag.commands.EndGame;
-import ga.uppishbuzzard87.shadowtag.commands.SetTagger;
-import ga.uppishbuzzard87.shadowtag.events.OnDamage;
+import uk.co.hudsonknott.shadowtag.commands.STCommands;
+import uk.co.hudsonknott.shadowtag.events.OnDamage;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -18,8 +18,9 @@ public final class ShadowTag extends JavaPlugin {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        getCommand("shadowtagger").setExecutor(new SetTagger());
-        getCommand("shadowend").setExecutor(new EndGame());
+        //getCommand("shadowtagger").setExecutor(new SetTagger());
+        //getCommand("shadowend").setExecutor(new EndGame());
+        getCommand("shadowtag").setExecutor(new STCommands());
         getServer().getPluginManager().registerEvents(new OnDamage(), this);
         String version = properties.getProperty("version");
         String artifactId = properties.getProperty("artifactId");

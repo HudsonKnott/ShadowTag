@@ -1,4 +1,4 @@
-package ga.uppishbuzzard87.shadowtag.functions;
+package uk.co.hudsonknott.shadowtag.functions;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

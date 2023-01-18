@@ -1,7 +1,6 @@
-package ga.uppishbuzzard87.shadowtag.functions;
+package uk.co.hudsonknott.shadowtag.functions;
 
-import ga.uppishbuzzard87.shadowtag.ShadowTag;
-import ga.uppishbuzzard87.shadowtag.functions.GiveRemovePowerups;
+import uk.co.hudsonknott.shadowtag.ShadowTag;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
