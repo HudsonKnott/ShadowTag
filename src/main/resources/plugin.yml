@@ -1,13 +1,5 @@
 name: ShadowTag
 version: '${project.version}'
 main: uk.co.hudsonknott.shadowtag.ShadowTag
-api-version: 1.17
+api-version: 1.19
 commands:
-  shadowtagger:
-    description: Sets the tagger and starts the game
-    usage: /shadowtagger <player>
-    permission: st.start
-  shadowtag:
-    description: Main shadow tag command
-    usage: /shadowtag [set|end]
-    permission: st.end
