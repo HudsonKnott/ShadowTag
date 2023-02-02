@@ -3,3 +3,11 @@ version: '${project.version}'
 main: uk.co.hudsonknott.shadowtag.ShadowTag
 api-version: 1.19
 commands:
+  shadowtag set:
+    usage: "Usage: /shadowtag set <tagger>"
+    description: "Sets the tagger and start the game"
+    permission: "st.set"
+  shadowtag end:
+    usage: "Usage: /shadowtag end"
+    description: "Ends the game"
+    permission: "st.end"
