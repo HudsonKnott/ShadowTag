@@ -1,4 +1,4 @@
-package uk.co.hudsonknott.shadowtag.functions;
+package uk.co.hudsonknott.shadowtag.utilities;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -36,20 +36,18 @@ public class Powerups {
         tridentMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "Slow Down Player (throw me)");
         trident.setItemMeta(tridentMeta);
     }
-    public static void removePowerups() {
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            if (p.getInventory().contains(new ItemStack(Material.RABBIT_FOOT))) {
-                p.getInventory().removeItem(new ItemStack(Material.RABBIT_FOOT));
-            }
-            if (p.getInventory().contains(new ItemStack(Material.FEATHER))) {
-                p.getInventory().removeItem(new ItemStack(Material.FEATHER));
-            }
-            if (p.getInventory().contains(new ItemStack(Material.GRAY_DYE))) {
-                p.getInventory().removeItem(new ItemStack(Material.GRAY_DYE));
-            }
-            if (p.getInventory().contains(new ItemStack(Material.TRIDENT))) {
-                p.getInventory().removeItem(new ItemStack(Material.TRIDENT));
-            }
+    public static void removePowerups(Player p) {
+        if (p.getInventory().contains(new ItemStack(Material.RABBIT_FOOT))) {
+            p.getInventory().removeItem(new ItemStack(Material.RABBIT_FOOT));
+        }
+        if (p.getInventory().contains(new ItemStack(Material.FEATHER))) {
+            p.getInventory().removeItem(new ItemStack(Material.FEATHER));
+        }
+        if (p.getInventory().contains(new ItemStack(Material.GRAY_DYE))) {
+            p.getInventory().removeItem(new ItemStack(Material.GRAY_DYE));
+        }
+        if (p.getInventory().contains(new ItemStack(Material.TRIDENT))) {
+            p.getInventory().removeItem(new ItemStack(Material.TRIDENT));
         }
     }
 }

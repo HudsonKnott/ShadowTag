@@ -7,7 +7,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-import uk.co.hudsonknott.shadowtag.Tagger;
+import uk.co.hudsonknott.shadowtag.utilities.Tagger;
+import uk.co.hudsonknott.shadowtag.utilities.Powerups;
 
 public class STCommands implements CommandExecutor {
 
@@ -31,6 +32,7 @@ public class STCommands implements CommandExecutor {
                     for (Player p : Bukkit.getOnlinePlayers()) {
                         if (p != Tagger.tagger) {
                             p.sendMessage(ChatColor.GREEN + "You are a runner! The tagger is " + Tagger.tagger.getName() + " and they will be released in 30 seconds");
+                            Powerups.givePowerups(p);
                         }
                     }
                 }
@@ -38,6 +40,7 @@ public class STCommands implements CommandExecutor {
                     Tagger.removeTagger();
                     for (Player p : Bukkit.getOnlinePlayers()) {
                         p.sendMessage(ChatColor.GREEN + "The game is over! " + Tagger.tagger.getName() + " was the final tagger");
+                        Powerups.removePowerups(p);
                     }
                 }
             }
