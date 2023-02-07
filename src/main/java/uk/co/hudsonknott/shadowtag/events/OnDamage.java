@@ -6,7 +6,5 @@ import org.bukkit.event.entity.EntityDamageEvent;
 
 public class OnDamage implements Listener {
     @EventHandler
-    public static void onDamage(EntityDamageEvent e) {
-        e.setDamage(0);
-    }
+    public static void onDamage(EntityDamageEvent e) {e.setDamage(0);}
 }

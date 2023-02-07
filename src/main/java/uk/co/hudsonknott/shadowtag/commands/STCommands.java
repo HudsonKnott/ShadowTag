@@ -11,7 +11,6 @@ import uk.co.hudsonknott.shadowtag.utilities.Tagger;
 import uk.co.hudsonknott.shadowtag.utilities.Powerups;
 
 public class STCommands implements CommandExecutor {
-
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
         if (command.getName().equalsIgnoreCase("shadowtag")) {

@@ -10,7 +10,6 @@ public class OnPunch implements Listener {
     @EventHandler
     public static void onPunch(EntityDamageByEntityEvent e) {
         e.setDamage(0);
-
         if (e.getEntity() instanceof Player) {
             Player p = (Player) e.getEntity();
             if (e.getDamager() instanceof Player) {

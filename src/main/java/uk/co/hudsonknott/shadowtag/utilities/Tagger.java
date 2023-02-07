@@ -13,9 +13,7 @@ public final class Tagger {
     private static final float increasedWalkSpeed = 0.25f;
 
     // Dependency injection
-    public Tagger(ShadowTag plugin) {
-        mainClass = plugin;
-    }
+    public Tagger(ShadowTag plugin) {mainClass = plugin;}
 
     public static void giveTagger(Player p) {
         tagger = p;
